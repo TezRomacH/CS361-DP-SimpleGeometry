@@ -16,5 +16,11 @@ namespace GeometryLib.Shapes
         /// </summary>
         /// <returns></returns>
         public abstract string Print();
+
+        /// <summary>
+        /// Вычисляет площадь фигуры
+        /// </summary>
+        /// <returns></returns>
+        public abstract double Area();
     }
 }

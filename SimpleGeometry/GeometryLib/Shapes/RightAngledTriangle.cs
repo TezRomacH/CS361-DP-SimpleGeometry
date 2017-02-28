@@ -17,15 +17,11 @@ namespace GeometryLib.Shapes
         {
         }
 
-        public override string Print()
-        {
-            double area = 0.5 * this.Side1 * this.Side2;
-            var info = "Right-angled Triangle: ";
-            info += $"sides {this.Side1} {this.Side2} {this.Side3}, ";
-            info += $"area = {area}";
+        public override string Print() =>
+            $"Right-angled Triangle: sides {this.Side1} {this.Side2} {this.Side3}, area = {Area()}";
 
-            return info;
-        }
+
+        public override double Area() => this.Side1 * this.Side2 / 2.0;
     }
 
 }
